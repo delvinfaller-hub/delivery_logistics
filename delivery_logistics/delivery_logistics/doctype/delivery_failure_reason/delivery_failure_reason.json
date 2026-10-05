@@ -1,0 +1,64 @@
+{
+ "docstatus": 0,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "modified": "2026-10-02 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Delivery Logistics",
+ "owner": "Administrator",
+ "creation": "2026-10-02 00:00:00.000000",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "name": "Delivery Failure Reason",
+ "autoname": "field:reason",
+ "field_order": [
+  "reason",
+  "allow_reschedule",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "allow_reschedule",
+   "fieldtype": "Check",
+   "label": "Allow Reschedule",
+   "default": "1"
+  },
+  {
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  },
+  {
+   "role": "Stock Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Stock User",
+   "read": 1
+  },
+  {
+   "role": "Delivery Manager",
+   "read": 1
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "docstatus": 0,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "modified": "2026-10-02 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Delivery Logistics",
+ "owner": "Administrator",
+ "creation": "2026-10-02 00:00:00.000000",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "name": "Delivery Trip Expense",
+ "istable": 1,
+ "editable_grid": 1,
+ "field_order": [
+  "expense_type",
+  "amount",
+  "description",
+  "journal_entry",
+  "expense_claim"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_type",
+   "fieldtype": "Select",
+   "label": "Expense Type",
+   "reqd": 1,
+   "in_list_view": 1,
+   "options": "Fuel\nToll\nDriver\nHelper\nParking\nOther"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry"
+  },
+  {
+   "fieldname": "expense_claim",
+   "fieldtype": "Link",
+   "label": "Expense Claim",
+   "options": "Expense Claim"
+  }
+ ],
+ "permissions": []
+}
